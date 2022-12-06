@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Upload files here</title>
+
+    </head>
+    <body>
+
+        <Form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            Select a csv file with two coloumns
+            <br>
+            <input type="file" name="data_file" id="data_file" required="required">
+            <button id="submit" class="btn-primary">Upload</button>
+         
+         
+        </Form>>
+    </body>
+
+</head>
+</html>
